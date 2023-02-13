@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+    app('debugbar')->info('debugbar start');
     return view('welcome');
 });
 
